@@ -1,0 +1,8 @@
+services:
+#    my_bench.example:
+#        class: MyBenchBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+    my_bench.task_runner:
+        class: MyBenchBundle\Service\TaskRunner
+        arguments: ["@doctrine.dbal.default_connection"]
